@@ -42,7 +42,7 @@ your passphrase a bunch of times in a row.
 
 I hate coding absolute paths in my build script and I hate including
 built files as part of the base project. My philosophy is that the
-*environment* should be set up so that the tool can easily find the
+_environment_ should be set up so that the tool can easily find the
 external resources they need (JUnit, etc.) from the system or
 dependency manager. It's the system or dependency manager that
 provides the libraries. Anyone who has the proper development
@@ -51,6 +51,87 @@ able to clone the repository and do a build simply by running the
 build program with no special arguments. There should be no need to
 edit or install anything into the project space for the initial build.
 
-
 # This is the change which is updated twice..
- `branch1 is created`
+
+`branch1 is created`
+$ git --version
+
+# clone repo
+
+git clone https://github.com/aloki9singh/sample-java-project.git
+
+# move to that directory
+
+cd sample-java-project
+
+# list all folders
+
+ls
+
+# list all folders including hidden files
+
+ls --al
+
+# status of staged commit and modified
+
+git status
+
+# staged
+
+git add .
+
+# commit files
+
+$ git commit -m"commit 1"
+
+# pushed to repo  master
+
+$ git push origin master
+
+# status of staged commit and modified
+
+$ git status
+
+$ git add .
+
+# again commit
+
+$ git commit -m"commit 2"
+
+$ git push origin master
+
+# logs of commit
+
+$ git log
+
+#  last commits one line
+
+$ git log -oneline
+
+#  last five commits one line
+
+$ git log --oneline -n 5
+
+# new branch created name branch1
+
+$ git branch branch1
+
+# checking on branch1
+
+$ git checkout branch1
+
+# again stage
+
+$ git add .
+
+# commit files modified 
+
+$ git commit -m"branch1added"
+
+# pushed to branch
+
+$ git push origin branch1
+
+# merged in forked repo
+
+
